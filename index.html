@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Color palette</h1>
+  <p>Buat palet warnamu sendiri disini</p>
+  <p class="info">Perhatian, sebelum menambahkan palet harap pastikan judul telah diisi dan minimal telah memilih 2 warna</p>
+  <div class="create">
+    <label for="judul">Judul: </label>
+    <input type="text" name="judul" class="input-title">
+    <br>
+    <label for="color">Pilih Warna</label>
+    <br>
+    <div class="flex-container">
+      <input type="color" name="color" value="#000000" class="input-color">
+      <input type="text" name="hex" class="hex" value="#000000">
+      <button class="color-button">Tambah Warna</button>
+    </div>
+    <div class="color-container"></div>
+    <button class="palette-button">Tambah Palet</button>
+  </div>
+
+  <h2>Daftar Palet</h2>
+
+  <div class="flex-container">
+    <div class="palette">
+      <p id="reminder">Anda belum memiliki palet, silahkan buat</p>
+    </div>
+  </div>
+
+  <p>Ganti Background</p>
+  <footer>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

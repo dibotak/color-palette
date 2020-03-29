@@ -1,0 +1,195 @@
+:root {
+  --bg-color: #faf5e4;
+  --color: #004445;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, p {
+  text-align: center;
+}
+
+input {
+  border: none;
+}
+
+button {
+  background-color: #706c61;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.info {
+  border: coral solid 2px;
+  padding: 5px;
+}
+
+.create {
+  max-width: 800px;
+  margin: auto;
+  background-color: #cff1ef;
+  padding: 10px;
+}
+
+.color {
+  width: 100px;
+  height: 50px;
+  margin: 2px;
+  color: #888;
+}
+
+.remove-color {
+  margin-top: 0;
+  margin-left: 150px;
+  width: 200px;
+  height: 30px;
+  line-height: 10px;
+}
+
+.input-title {
+  width: 400px;
+  height: 30px;
+  margin: 20px 10px 20px;
+  font-size: 20px;
+}
+
+.input-color {
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.color-button {
+  height: 40px;
+  margin-top: 33px;
+  margin-left: 30px;
+}
+
+#create-color {
+  margin: auto;
+  width: 100px;
+}
+
+
+.color-container {
+  margin: auto;
+  width: 400px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.palette-button {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.hex {
+  height: 30px;
+  width: 100px;
+  margin: 37px 0 0 30px;
+  font-size: 20px;
+}
+
+.palette {
+  background-color: #ccedd2;
+  width: 30%;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.remove-palette {
+  margin: 20px 0;
+}
+
+footer {
+  margin: auto;
+  width: 60px;
+}
+/* Add something */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
