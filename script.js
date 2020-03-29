@@ -100,13 +100,15 @@ function addPalette() {
   //perintah hapus
   remove.addEventListener('click', function() {
     if (confirm('Palet akan dihapus, yakin?')) {
-      remove.parentElement.remove();
+      remove.parentElement.parentElement.remove();
     }
-    if (!flex[1].children[0].children.length) {
+    if (!flex[1].children.length) {
+      palette.innerHTML = '';
       var newReminder = document.createElement('p');
       newReminder.setAttribute('id', 'reminder');
       newReminder.appendChild(document.createTextNode('Anda belum memiliki palet, silahkan buat'));
       palette.appendChild(newReminder);
+      flex[1].appendChild(palette);
     }
   })
 }
@@ -125,3 +127,19 @@ function check() {
   }
 }
 
+
+var changeBG = document.querySelector('.switch');
+changeBG.addEventListener('input', function() {
+  var bodyE = document.body;
+  var val = document.querySelector('.switch');
+  var check = val.children[0].value;
+  console.log(check);
+  if (check == 'on') {
+    bodyE.style.backgroundColor = 'var(--color2)';
+    bodyE.style.color = 'var(--color1)';
+  } else if (check == 'off') {
+    bodyE.style.backgroundColor = 'var(--color1)';
+    bodyE.style.color = 'var(--color2)';
+  }
+  
+})

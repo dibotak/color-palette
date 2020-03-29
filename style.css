@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #faf5e4;
-  --color: #004445;
+  --color1: #faf5e4;
+  --color2: #004445;
 
 }
 
@@ -9,8 +9,8 @@
 body {
   max-width: 1000px;
   margin: auto;
-  background-color: var(--bg-color);
-  color: var(--color);
+  background-color: var(--color1);
+  color: var(--color2);
   font-family: 'Ubuntu', sans-serif;
 }
 
